@@ -1,0 +1,24 @@
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  background-color: #007a4e;
+  align-items: center;
+  margin-top: 5vw;
+
+  margin-left: 30vw;
+}
+
+.label {
+  width: 10vw;
+  height: 3vw;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slc {
+  background-color: yellow;
+}
+.opt {
+  background-color: chartreuse;
+}

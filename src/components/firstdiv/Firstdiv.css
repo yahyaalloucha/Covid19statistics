@@ -1,0 +1,20 @@
+.bigdiv {
+  display: flex;
+  flex-direction: row;
+  background-color: #007a4e;
+}
+
+.hdiv {
+  margin-left: 10vw;
+}
+.menudiv {
+  margin-left: 70vw;
+  margin-top: 1vw;
+}
+
+h1 {
+  color: blue;
+}
+span {
+  color: yellow;
+}

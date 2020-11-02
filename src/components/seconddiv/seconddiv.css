@@ -1,0 +1,33 @@
+.didi {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6vw;
+  background-color: #007a4e;
+}
+.imgi {
+  height: 25vw;
+  width: 40vw;
+
+  border-radius: 20px;
+  background-color: #007a4e;
+  margin-left: 20vw;
+}
+.difcorona {
+  margin-left: 5vw;
+  width: 30vw;
+}
+p {
+  font-size: larger;
+  font-style: oblique;
+  color: whitesmoke;
+  text-align: center;
+}
+.corona {
+  font-size: 80px;
+  font-style: italic;
+  margin-left: 8vw;
+}
+.about {
+  color: whitesmoke;
+  width: 15vw;
+}
