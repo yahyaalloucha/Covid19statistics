@@ -45,22 +45,44 @@ class Directory extends React.Component {
 
         });
       } else {
-        url = "https://api.covid19api.com/dayone/country/" + count;
+        var  url = "https://api.covid19api.com/total/dayone/country/" + count;
         const response = await fetch(url);
         const data = await response.json();
+        var colastMonthDatad = [];
+          var colastMonthDatac=[];
+          var colastMonthDatar=[];
+        
+        for(var i= data.length-2;i>data.length-29;i--){
+          
+          colastMonthDatad.push((data[i].Confirmed)-(data[i-1].Confirmed));
+          colastMonthDatac.push((data[i].Recovered)-(data[i-1].Recovered));
+          colastMonthDatar.push((data[i].Deaths)-(data[i-1].Deaths));
+            
+             
+
+        }
+        this.setState({
+          LastDataD: colastMonthDatad,
+          LastDataC:colastMonthDatac,
+          LastDataR: colastMonthDatar,
+
+        })
+        console.log(count);
+        console.log(colastMonthDatar);
+
       }
     }
   };
 
   render() {
-    console.log(this.state.LastDataC);
+    console.log(this.state.LastDataCt);
     const data = {
       labels: this.state.dates,
       datasets: [
         {
-          label: "My First dataset",
+          label: "NewDeaths",
           yAxisID: "A",
-          fill: false,
+          fill: true,
           lineTension: 0.1,
           backgroundColor: "rgba(75,192,192,0.4)",
           borderColor: "rgba(75,192,192,1)",
@@ -80,9 +102,14 @@ class Directory extends React.Component {
           data: this.state.LastDataD,
           
         },{
+          label:"NewConfirmed",
           data: this.state.LastDataC,
           yAxisID: "B",
+          fill:true,
           borderColor: "yellow",
+          backgroundColor:"#F7DE1F",
+          borderDash: [],
+          borderCapStyle: "butt",
           borderJoinStyle: "miter",
           pointBorderWidth: 1,
           pointHoverRadius: 5,
@@ -91,6 +118,20 @@ class Directory extends React.Component {
           pointHoverBorderWidth: 2,
           pointRadius: 1,
           pointHitRadius: 10,
+        },
+        {
+          label:"NewRcorvered",
+          data:this.state.LastDataR,
+          yAxisID:"R",
+          
+          borderColor:"#FFA500",
+          borderCapStyle: "butt",
+          borderJoinStyle: "miter",
+          pointBorderWidth: 1,
+          pointHoverRadius: 5,
+          pointRadius: 1,
+          pointHitRadius: 10,
+
         }
         
       ],
@@ -109,10 +150,11 @@ class Directory extends React.Component {
                   id: "A",
                   type: "linear",
                   position: "left",
+                  
 
                   ticks: {
                     beginAtZero: true,
-                    fontColor: "black",
+                    fontColor: "red",
                     
                   },
                  
@@ -121,16 +163,24 @@ class Directory extends React.Component {
                   type: 'linear',
                   position: 'right',
                   ticks: {
-                    fontColor:"black"
+                    fontColor:"yellow"
                   }
           
                 
                 
+                },{
+                  id:'R',
+                  type:'linear',
+                  ticks:{
+                    fontColor:"#FFA500",
+
+                  }
+
                 }],
               xAxes: [
                 {
                   ticks: {
-                    fontColor: "black",
+                    fontColor: "white",
                   },
                 },
               ],
