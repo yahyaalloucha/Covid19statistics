@@ -1,11 +1,9 @@
 .dropdown {
   display: flex;
   flex-direction: row;
-  background-color: #020303;
+  background-color: #36526d;
   align-items: center;
-  margin-top: 5vw;
-
-  margin-left: 30vw;
+  margin-top: 10vw;
 }
 
 .label {
@@ -15,10 +13,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 .slc {
-  background-color: yellow;
+  background-color: rgb(71, 83, 255);
+  border-radius: 20px;
 }
 .opt {
-  background-color: chartreuse;
+  background-color: rgb(71, 83, 255);
 }

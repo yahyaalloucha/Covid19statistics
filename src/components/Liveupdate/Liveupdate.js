@@ -39,16 +39,16 @@ class Liveupdate extends React.Component {
         </div>
         <div className="divofstatistiques">
           <div className="statiquesnames">
-            <h2>totalcured</h2>
-            <p className="numof">{this.state.totalcured}</p>
+            <h2 className="hR">totalcured</h2>
+            <div className="pS"><p className="numof">{this.state.totalcured}</p></div>
           </div>
           <div className="statiquesnames">
-            <h2>total death</h2>
-            <p className="numof">{this.state.totaldeath}</p>
+            <h2 className="hD">total death</h2>
+            <div className="pS"><p className="numof">{this.state.totaldeath}</p></div>
           </div>
           <div className="statiquesnames">
-            <h2>totalinfected</h2>
-            <p className="numof">{this.state.totalinfected}</p>
+            <h2 className="hC">totalinfected</h2>
+            <div className="pS"><p className="numof">{this.state.totalinfected}</p></div>
           </div>
         </div>
       </div>

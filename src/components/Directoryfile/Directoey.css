@@ -1,6 +1,17 @@
+.aboutlines {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .linecharts {
-  width: 80vw !important;
-  height: 40vw !important;
+  width: 30vw !important;
+  height: 30vw !important;
   margin-left: 10vw;
+  margin-top: 3vw;
+}
+.linecharts1 {
+  width: 30vw !important;
+  height: 30vw !important;
   margin-top: 3vw;
 }

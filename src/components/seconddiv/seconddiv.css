@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: row;
   margin-top: 6vw;
-  background-color: #020303;
+  background-color: #36526d;
 }
 .imgi {
   height: 25vw;
   width: 40vw;
 
   border-radius: 20px;
-  background-color: #020303;
+  background-color: #36526d;
   margin-left: 20vw;
 }
 .difcorona {
@@ -30,8 +30,8 @@ p {
 .about {
   color: yellowgreen;
   font-style: italic;
-  margin-left: 4vw;
+  margin-left: 3.2vw;
   width: 25vw;
-  font-size: 80px;
-  margin-top: -1.5vw;
+  font-size: 40px;
+  margin-top: -1vw;
 }

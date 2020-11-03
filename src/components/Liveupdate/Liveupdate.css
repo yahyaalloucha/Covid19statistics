@@ -1,18 +1,20 @@
 .liveupdate {
   display: flex;
   flex-direction: column;
-  margin-top: 7vw;
+  margin-top: 3vw;
 }
 .live {
   display: flex;
   align-items: center;
-  margin-left: 0vw;
+  margin-left: 30vw;
 }
 h1 {
   align-self: center;
   font-size: 40px;
   font-weight: 400px;
   text-align: center;
+  color: #46d5fe;
+  font-style: oblique;
 }
 h2 {
   align-self: center;
@@ -27,16 +29,27 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-top: 4vw !important;
+  border-radius: 20px;
 }
 .statiquesnames {
-  background-color: slateblue;
+  background-color: #012f84;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 12vw;
-  margin-top: 2vw;
+  margin-left: 13.5vw;
+  margin-top: -2vw;
   width: 15vw;
   height: 6vw;
+  border-radius: 20px;
+}
+.hD {
+  color: red;
+}
+.hC {
+  color: yellow;
+}
+.hR {
+  color: orange;
 }
 
 .icon1 {

@@ -54,9 +54,9 @@ class Directory extends React.Component {
         
         for(var i= data.length-2;i>data.length-29;i--){
           
-          colastMonthDatad.push((data[i].Confirmed)-(data[i-1].Confirmed));
-          colastMonthDatac.push((data[i].Recovered)-(data[i-1].Recovered));
-          colastMonthDatar.push((data[i].Deaths)-(data[i-1].Deaths));
+          colastMonthDatad.push((data[i].Deaths)-(data[i-1].Deaths));
+          colastMonthDatac.push((data[i].Confirmed)-(data[i-1].Confirmed));
+          colastMonthDatar.push((data[i].Recovered)-(data[i-1].Recovered));
             
              
 
@@ -68,7 +68,7 @@ class Directory extends React.Component {
 
         })
         console.log(count);
-        console.log(colastMonthDatar);
+        console.log(colastMonthDatad);
 
       }
     }
@@ -76,7 +76,7 @@ class Directory extends React.Component {
 
   render() {
     console.log(this.state.LastDataCt);
-    const data = {
+    const data1 = {
       labels: this.state.dates,
       datasets: [
         {
@@ -84,8 +84,8 @@ class Directory extends React.Component {
           yAxisID: "A",
           fill: true,
           lineTension: 0.1,
-          backgroundColor: "rgba(75,192,192,0.4)",
-          borderColor: "rgba(75,192,192,1)",
+          backgroundColor: "red",
+          borderColor: "red",
           borderCapStyle: "butt",
           borderDash: [],
           borderDashOffset: 0.0,
@@ -101,7 +101,17 @@ class Directory extends React.Component {
           pointHitRadius: 10,
           data: this.state.LastDataD,
           
-        },{
+        },
+        
+        
+      ],
+      
+    
+    };
+    const data2 ={
+      labels: this.state.dates,
+      datasets: [
+        {
           label:"NewConfirmed",
           data: this.state.LastDataC,
           yAxisID: "B",
@@ -118,30 +128,37 @@ class Directory extends React.Component {
           pointHoverBorderWidth: 2,
           pointRadius: 1,
           pointHitRadius: 10,
-        },
-        {
-          label:"NewRcorvered",
-          data:this.state.LastDataR,
-          yAxisID:"R",
-          
-          borderColor:"#FFA500",
-          borderCapStyle: "butt",
-          borderJoinStyle: "miter",
-          pointBorderWidth: 1,
-          pointHoverRadius: 5,
-          pointRadius: 1,
-          pointHitRadius: 10,
-
-        }
         
-      ],
+        }
+      ]
       
-    
+
     };
+    const data3={
+      labels:this.state.dates,
+      datasets:[
+        {
+          
+            label:"NewRcorvered",
+            data:this.state.LastDataR,
+            yAxisID:"R",
+            
+            borderColor:"#FFA500",
+            borderCapStyle: "butt",
+            borderJoinStyle: "miter",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointRadius: 1,
+            pointHitRadius: 10,
+  
+          
+        }
+      ]
+    }
     return (
-      <div className="linecharts">
-        <Line
-          data={data}
+      <div className="aboutlines">
+        <div className="linecharts1"><Line
+          data={data1}
           options={{
             maintainAspectRatio: false,
             scales: {
@@ -158,25 +175,10 @@ class Directory extends React.Component {
                     
                   },
                  
-                },{
-                  id: 'B',
-                  type: 'linear',
-                  position: 'right',
-                  ticks: {
-                    fontColor:"yellow"
-                  }
-          
-                
-                
-                },{
-                  id:'R',
-                  type:'linear',
-                  ticks:{
-                    fontColor:"#FFA500",
+                },
+                  
 
-                  }
-
-                }],
+                ],
               xAxes: [
                 {
                   ticks: {
@@ -186,7 +188,83 @@ class Directory extends React.Component {
               ],
             },
           }}
-        />
+        /></div>
+         <div className="linecharts">
+         <Line
+          data={data2}
+          options={{
+            maintainAspectRatio: false,
+            scales:{
+                yAxes:[
+                  {
+                    
+                      id: 'B',
+                      type: 'linear',
+                      position: 'left',
+                      ticks: {
+                        fontColor:"yellow"
+                      }
+              
+                    
+                    
+                    
+                }
+              ],
+              xAxes: [
+                {
+                  ticks: {
+                    fontColor: "white",
+                  },
+                }]
+
+
+            }
+            
+            
+            }}/>
+
+
+         </div>
+        <div className="linecharts">
+
+        <Line
+            data={data3}
+            options={{
+              maintainAspectRatio: false,
+              scales:{
+                  yAxes:[
+                    {
+
+                      id:'R',
+                  type:'linear',
+                  ticks:{
+                    fontColor:"#FFA500",
+
+                  }
+
+                    }
+                  ],
+                  xAxes:[
+                    {
+                      ticks: {
+                        fontColor: "white",
+                      },
+
+                    }
+                  ]
+
+              }
+            }}
+            
+            
+            />
+
+
+
+        </div>
+        
+            
+            
       </div>
     );
   }

@@ -18,7 +18,10 @@ class Parte extends React.Component {
     return cases == null ? (
       <div>Loading...</div>
     ) : (
-      <div className="pieChart">
+      
+      <div>
+        <div className="besave"></div>
+        <div className="pieChart">
         <Doughnut
           data={data}
           options={{
@@ -32,6 +35,8 @@ class Parte extends React.Component {
           }}
         />
       </div>
+      </div>
+      
     );
   }
 }

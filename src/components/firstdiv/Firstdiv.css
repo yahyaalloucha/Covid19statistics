@@ -1,7 +1,7 @@
 .bigdiv {
   display: flex;
   flex-direction: row;
-  background-color: #020303;
+  background-color: #36526d;
 }
 
 .hdiv {
@@ -13,7 +13,7 @@
 }
 
 h1 {
-  color: blue;
+  color: #8e27e0;
 }
 span {
   color: yellow;
