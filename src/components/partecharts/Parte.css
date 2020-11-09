@@ -1,6 +1,217 @@
+.parte {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-left: 10vw;
+}
+.besave {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
 .pieChart {
-  width: 33vw !important;
-  height: 33vw !important;
+  width: 20vw !important;
+  height: 20vw !important;
   margin-top: -4vw !important;
-  margin-left: 50vw !important;
+  margin-left: 20vw !important;
+}
+@media (max-width: 400px) {
+  .parte {
+    align-items: center;
+    margin-top: -4vw !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .besave {
+    align-items: center;
+    align-self: center;
+    margin-top: -10vw !important;
+    justify-content: center;
+    margin-left: -7vw !important;
+  }
+  .tit {
+    align-self: center;
+    text-align: center;
+    margin-left: 2vw;
+  }
+  .pieChart {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw !important;
+    margin-left: -8vw !important;
+    width: 100vw !important;
+    height: 100vw !important;
+  }
+  .howtobesave {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 80vw;
+    margin-left: 8vw;
+  }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+  .parte {
+    align-items: center;
+    margin-top: -4vw !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .besave {
+    align-items: center;
+    align-self: center;
+    margin-top: -10vw !important;
+    justify-content: center;
+    margin-left: -7vw !important;
+  }
+  .tit {
+    align-self: center;
+    text-align: center;
+    margin-left: 2vw;
+  }
+  .pieChart {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw !important;
+    margin-left: -8vw !important;
+    width: 100vw !important;
+    height: 100vw !important;
+  }
+  .howtobesave {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 80vw;
+    margin-left: 8vw;
+  }
+}
+@media (min-width: 601px) and (max-width: 700px) {
+  .parte {
+    align-items: center;
+    margin-top: 0vw !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .besave {
+    align-items: center;
+    align-self: center;
+    margin-top: -6vw !important;
+    justify-content: center;
+    margin-left: -7vw !important;
+  }
+  .tit {
+    align-self: center;
+    text-align: center;
+    margin-left: 2vw;
+  }
+  .pieChart {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw !important;
+    margin-left: -8vw !important;
+    width: 100vw !important;
+    height: 100vw !important;
+  }
+  .howtobesave {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 80vw;
+    margin-left: 8vw;
+  }
+}
+@media (min-width: 701px) and (max-width: 810px) {
+  .parte {
+    align-items: center;
+    margin-top: 0vw !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .besave {
+    align-items: center;
+    align-self: center;
+    margin-top: -6vw !important;
+    justify-content: center;
+    margin-left: -7vw !important;
+  }
+  .tit {
+    align-self: center;
+    text-align: center;
+    margin-left: 2vw;
+  }
+  .pieChart {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-top: 5vw !important;
+    margin-left: 0vw !important;
+    width: 70vw !important;
+    height: 100vw !important;
+  }
+  .howtobesave {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 80vw;
+    margin-left: 8vw;
+    margin-top: 0vw !important;
+  }
+}
+@media (min-width: 811px) and (max-width: 1000px) {
+  .parte {
+    align-items: center;
+    margin-top: -10vw !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .besave {
+    align-items: center;
+    align-self: center;
+    margin-top: -6vw !important;
+    justify-content: center;
+    margin-left: -7vw !important;
+  }
+  .tit {
+    align-self: center;
+    text-align: center;
+    margin-left: 2vw;
+  }
+  .pieChart {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-top: 5vw !important;
+    margin-left: 0vw !important;
+    width: 50vw !important;
+    height: 50vw !important;
+  }
+  .howtobesave {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 80vw;
+    margin-left: 8vw;
+    margin-top: 4vw !important;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1500px) {
+  .parte {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 2vw;
+  }
+  .besave {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 2vw !important;
+  }
+  .pieChart {
+    width: 30vw !important;
+    height: 30vw !important;
+    margin-top: 10vw !important;
+    margin-left: 10vw !important;
+  }
 }

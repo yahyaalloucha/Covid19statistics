@@ -1,8 +1,8 @@
 .didi {
   display: flex;
-  flex-direction: row;
-  margin-top: 6vw;
+  margin-top: 0vw;
   background-color: #36526d;
+  width: 80vw;
 }
 .imgi {
   height: 25vw;
@@ -14,7 +14,7 @@
 }
 .difcorona {
   margin-left: 5vw;
-  width: 30vw;
+  width: 100vw;
 }
 p {
   font-size: larger;
@@ -25,13 +25,138 @@ p {
 .corona {
   font-size: 80px;
   font-style: italic;
-  margin-left: 8vw;
+  margin-left: 5vw !important;
 }
 .about {
   color: yellowgreen;
   font-style: italic;
-  margin-left: 3.2vw;
+  margin-left: 1.5vw !important;
   width: 25vw;
   font-size: 40px;
   margin-top: -1vw;
+}
+@media (max-width: 400px) {
+  .didi {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-left: -4vw;
+  }
+  .difcorona {
+    display: flex;
+    width: 100vw;
+    align-self: center;
+    flex-direction: column;
+  }
+  .corona {
+    font-size: 40px;
+    align-self: center;
+  }
+  .p {
+    font-size: 10px;
+    font-style: oblique;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 0vw;
+  }
+  .about {
+    font-size: 30px;
+    margin-left: 2vw;
+  }
+  .imgi {
+    height: 50vw;
+    width: 80vw;
+    margin-left: 8vw !important;
+  }
+
+  .about {
+    width: 100vw;
+  }
+}
+@media (min-width: 401px) and (max-width: 700px) {
+  .didi {
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin-left: 32vw !important;
+  }
+  .difcorona {
+    display: flex;
+    width: 70vw;
+    align-self: center;
+    flex-direction: column;
+  }
+  .corona {
+    font-size: 40px;
+    align-self: center;
+  }
+  .p {
+    font-size: 10px;
+    font-style: oblique;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 0vw;
+  }
+  .about {
+    font-size: 30px;
+    margin-left: 2vw;
+  }
+  .imgi {
+    height: 50vw;
+    width: 80vw;
+    margin-left: 8vw !important;
+  }
+
+  .about {
+    width: 100vw;
+  }
+}
+@media (min-width: 701px) and (max-width: 810px) {
+  .didi {
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin-left: 32vw !important;
+  }
+  .difcorona {
+    display: flex;
+    width: 70vw;
+    align-self: center;
+    flex-direction: column;
+  }
+  .corona {
+    font-size: 40px;
+    align-self: center;
+  }
+  .p {
+    font-size: 10px;
+    font-style: oblique;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 0vw;
+  }
+  .about {
+    font-size: 30px;
+    margin-left: 2vw;
+  }
+  .imgi {
+    height: 50vw;
+    width: 80vw;
+    margin-left: 8vw !important;
+  }
+
+  .about {
+    width: 100vw;
+  }
+}
+@media (min-width: 811px) and (max-width: 1000px) {
+  .imgi {
+    height: 35vw;
+    width: 50vw;
+
+    border-radius: 20px;
+    background-color: #36526d;
+    margin-left: 7vw;
+    margin-top: 10vw;
+  }
 }

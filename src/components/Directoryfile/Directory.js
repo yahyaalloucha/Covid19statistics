@@ -157,7 +157,7 @@ class Directory extends React.Component {
     }
     return (
       <div className="aboutlines">
-        <div className="linecharts1"><Line
+        <div className="linecharts" id="linecharts1"><Line
           data={data1}
           options={{
             maintainAspectRatio: false,

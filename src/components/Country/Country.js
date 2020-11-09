@@ -17,7 +17,7 @@ class Country extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="country">
         <div className="dropdown">
           <div className="label">
             <label className="lbl" for="drop">
@@ -37,12 +37,12 @@ class Country extends React.Component {
                   <option className="opt" value={a.name}>
                     {a.name}
                   </option>
-                );
+                ); 
               })}
             </select>
           </div>
         </div>
-        <div className="curve"></div>
+        
       </div>
     );
   }

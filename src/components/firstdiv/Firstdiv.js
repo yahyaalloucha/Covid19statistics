@@ -12,7 +12,7 @@ class Firstdiv extends React.Component {
           </h1>
         </div>
         <div className="menudiv">
-          <MenuIcon fontSize="large"></MenuIcon>
+          <MenuIcon fontSize="large" className="menu"></MenuIcon>
         </div>
       </div>
     );

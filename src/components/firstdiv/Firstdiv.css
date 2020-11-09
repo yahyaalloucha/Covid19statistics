@@ -11,10 +11,47 @@
   margin-left: 70vw;
   margin-top: 1vw;
 }
+.menu {
+  color: white;
+}
 
 h1 {
   color: #8e27e0;
 }
 span {
   color: yellow;
+}
+@media (max-width: 400px) {
+  .hdiv {
+    margin-left: -17vw;
+  }
+  .menudiv {
+    margin-left: 10vw !important;
+    margin-top: 5vw !important;
+  }
+  .menu {
+    color: white;
+  }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+  .hdiv {
+    margin-left: -20vw !important;
+  }
+  .menudiv {
+    margin-left: 20vw !important;
+    margin-top: 5vw !important;
+  }
+}
+@media (min-width: 701px) and (max-width: 810px) {
+  .menudiv {
+    margin-left: 10vw !important;
+    margin-top: 2vw !important;
+    visibility: hidden;
+  }
+}
+@media (min-width: 811px) and (max-width: 1000px) {
+  .menudiv {
+    margin-left: 60vw;
+    margin-top: 2.5vw;
+  }
 }

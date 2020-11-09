@@ -7,11 +7,71 @@
 .linecharts {
   width: 30vw !important;
   height: 30vw !important;
-  margin-left: 10vw;
+  margin-left: 3vw;
   margin-top: 3vw;
 }
-.linecharts1 {
+#linecharts1 {
   width: 30vw !important;
   height: 30vw !important;
   margin-top: 3vw;
+}
+@media (max-width: 400px) {
+  .aboutlines {
+    margin-top: 10vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .linecharts {
+    width: 80vw !important;
+    height: 100vw !important;
+    align-self: center;
+    margin-left: -5vw !important;
+  }
+  #linecharts1 {
+    width: 80vw !important;
+    height: 100vw !important;
+    align-self: center;
+    margin-left: -5vw !important;
+  }
+}
+@media (min-width: 401px) and (max-width: 700px) {
+  .aboutlines {
+    margin-top: 10vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .linecharts {
+    width: 80vw !important;
+    height: 100vw !important;
+    align-self: center;
+    margin-left: -5vw !important;
+  }
+  #linecharts1 {
+    width: 80vw !important;
+    height: 100vw !important;
+    align-self: center;
+    margin-left: -5vw !important;
+  }
+}
+@media (min-width: 701px) and (max-width: 810px) {
+  .aboutlines {
+    margin-top: 10vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .linecharts {
+    width: 80vw !important;
+    height: 100vw !important;
+    align-self: center;
+    margin-left: -5vw !important;
+  }
+  #linecharts1 {
+    width: 80vw !important;
+    height: 100vw !important;
+    align-self: center;
+    margin-left: -5vw !important;
+  }
 }
