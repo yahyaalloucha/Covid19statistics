@@ -20,7 +20,7 @@ class Directory extends React.Component {
       console.log("sds");
       var count = this.props.country;
       var url = null;
-      if (count == null || count == "") {
+      if (count === null || count === "") {
         url = "https://api.covid19api.com/world";
         const response = await fetch(url);
         const data = await response.json();
@@ -45,18 +45,18 @@ class Directory extends React.Component {
 
         });
       } else {
-        var  url = "https://api.covid19api.com/total/dayone/country/" + count;
-        const response = await fetch(url);
+        var  url1 = "https://api.covid19api.com/total/dayone/country/" + count;
+        const response = await fetch(url1);
         const data = await response.json();
         var colastMonthDatad = [];
           var colastMonthDatac=[];
           var colastMonthDatar=[];
         
-        for(var i= data.length-2;i>data.length-29;i--){
+        for(var j= data.length-2;j>data.length-29;j--){
           
-          colastMonthDatad.push((data[i].Deaths)-(data[i-1].Deaths));
-          colastMonthDatac.push((data[i].Confirmed)-(data[i-1].Confirmed));
-          colastMonthDatar.push((data[i].Recovered)-(data[i-1].Recovered));
+          colastMonthDatad.push((data[j].Deaths)-(data[j-1].Deaths));
+          colastMonthDatac.push((data[j].Confirmed)-(data[j-1].Confirmed));
+          colastMonthDatar.push((data[j].Recovered)-(data[j-1].Recovered));
             
              
 
@@ -174,7 +174,6 @@ class Directory extends React.Component {
                     fontColor: "red",
                     
                   },
-                 
                 },
                   
 

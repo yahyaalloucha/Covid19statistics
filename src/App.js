@@ -18,7 +18,7 @@ class App extends Component {
     country: undefined,
   };
 
-  componentDidMount = () => {
+  componentDidMount =()=>{
     this.setState({ country: null });
   };
 

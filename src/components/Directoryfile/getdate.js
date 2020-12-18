@@ -14,11 +14,11 @@ function date() {
     var newdate = yearx + "/" + monthx + "/" + day;
 
     day = day - 1;
-    //console.log(newdate);
-    if (day < 1) {
+    
+    if (day<1) {
       monthx = monthx - 1;
 
-      if (monthx == 1) {
+      if (monthx===1) {
         monthx = 12;
         yearx = yearx - 1;
       }
