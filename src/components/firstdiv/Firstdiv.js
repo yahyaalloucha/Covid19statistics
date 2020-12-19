@@ -11,9 +11,6 @@ class Firstdiv extends React.Component {
             COVID-<span>19</span>
           </h1>
         </div>
-        <div className="menudiv">
-          <MenuIcon fontSize="large" className="menu"></MenuIcon>
-        </div>
       </div>
     );
   }
